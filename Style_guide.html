@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>P01 - Style Guide</title>
-		<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans:300,400,600,700,800|Playfair+Display+SC:700,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/grid.css" rel="stylesheet">
 	</head>
@@ -41,8 +41,9 @@
 				</nav>
 			</div>
 			<div class="flexintro">
-				<!-- <p>wors</p> -->
-				<p><strong>Tale &amp; Tea</strong> is a monthly book and tea subscription service.  Ever month, subscribers will receive a specially curated box containing a novel and a hot beverage sample specifically chosen to the subscribers taste</p>
+				<p><strong>Tale &amp; Tea</strong> is a monthly book and tea subscription service.  Ever month, subscribers will receive a specially curated box. Each box contains a book, a hot beverage sample (tea, coffee or hot chocolate) and additional extras (such as a book mark or stationary). Boxes are curated by users taking an online quiz and rating past items in boxes</p>
+
+				<p>Users can choose to purchase boxes month to month or subscribe yearly for an additional discount.</p>
 			</div>
 		</div>
 		<!-- INTERACTIVE ELEMENTS SECTION // -->
@@ -261,11 +262,70 @@
 					</div>
 				</div>
 			</section>
-
 			<section>
 				<h2>Product Listing</h2>
-			</section>
+				<div class="flexbox-container">
+					<div>
+						<h3>Rendered element:</h3>
+						<div class="productListing flexbox-container">
+							<div class="flexPlan">
+								<h1>Monthly</h1>
+								<h2>$25.00 CAD</h2>
+								<p class="small-info">*Reoccurs monthly, additional taxes extra. Shipping cost may be applied</p>
+							</div>
+							<div class="flexPlan">
+								<h1>Yearly</h1>
+								<h2>$250.00 CAD</h2>
+								<p class="savings">$50 dollar savings!</p>
+								<p class="small-info">*Reoccurs monthly, additional taxes extra. Shipping cost may be applied</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h3>Information:</h3>
+						<h4>CSS Selector:</h4>
+						<p>.productListing</p>
+						<h4>Sample code:</h4>
+						<code>
+							&lt;div class="productListing flexbox-container"&gt;<br>
+							&emsp;&lt;div class="flexPlan"&gt;<br>
+							&emsp;&emsp;&lt;h1&gt;Monthly&lt;/h1&gt;<br>
+							&emsp;&emsp;&lt;h2&gt;$25.00 CAD&lt;/h2&gt;<br>
+							&emsp;&emsp;&lt;p class="small-info"&gt;*Reoccurs monthly, additional taxes extra. Shipping cost may be applied&lt;/p&gt;<br>
+							&emsp;&lt;/div&gt;<br>
 
+							&emsp;&lt;div class="flexPlan"&gt;<br>
+							&emsp;&emsp;&lt;h1&gt;Yearly&lt;/h1&gt;<br>
+							&emsp;&emsp;&lt;h2&gt;$250.00 CAD&lt;/h2&gt;<br>
+							&emsp;&emsp;&lt;p class="savings"&gt;$$50 dollar savings!&lt;/p&gt;<br>
+							&emsp;&emsp;&lt;p class="small-info"&gt;*Reoccurs monthly, additional taxes extra. Shipping cost may be applied&lt;/p&gt;<br>
+							&emsp;&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+						</code>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h2>Colour Swatches</h2>
+				<div class="flex-grid">
+					<div class=".col-4">
+						<div class="swatch turquoise"></div>
+						<p>rgb(26, 189, 197)</p>
+					</div>
+					<div class=".col-4">
+						<div class="swatch red"></div>
+						<p>rgb(226, 100, 86)</p>
+					</div>
+					<div class=".col-4">
+						<div class="swatch dark-blue"></div>
+						<p>rgb(59, 75, 117)</p>
+					</div>
+					<div class=".col-4">
+						<div class="swatch orange"></div>
+						<p>rgb(236, 179, 94)</p>
+					</div>
+				</div>
+			</section>
 		</section>
 		<!-- // COMBINED ELEMENTS SECTION -->
 
