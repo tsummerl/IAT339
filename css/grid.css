@@ -39,8 +39,8 @@
     position: absolute;
 }
 .flexPlan{
-    -webkit-flex-grow: 1 100%;
-    flex-grow: 1 100%;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
 }
 
 @media screen and (min-width: 26.563em)
